@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UX Portfolio</title>
+<style>
+  /* Basic Resets */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    padding: 5vh;
+  }
+
+  /* Flex Container for UX Skills */
+  .flexContainer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+
+  .flexContainer > div {
+    width: 33%;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  /* Grid Container for Work */
+  .workGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+  }
+
+  /* Responsive Design */
+  @media screen and (max-width: 600px) {
+    .flexContainer {
+      flex-direction: column;
+    }
+
+    .flexContainer > div, .workGrid > div {
+      width: 100%;
+    }
+
+    .workGrid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .work-img {
+    width: 50vh;
+  }
+
+  .btn {
+  padding: 10px 20px;
+  background: linear-gradient(45deg, #007BFF, #6610f2);
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.btn:hover {
+  background: linear-gradient(45deg, #6610f2, #007BFF);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+.btn:active {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transform: translateY(1px);
+}
+
+</style>
+</head>
+<body>
+
+<!-- My UX Skills Section -->
+<section class="mySkills">
+  <h1>My UX Skills</h1>
+  <div class="flexContainer">
+    <div>
+      <img src="https://cdn-icons-png.flaticon.com/128/2502/2502399.png" alt="Problem Solving">
+      <h3>Problem Solving</h3>
+      <p>I am good at that</p>
+    </div>
+    <div>
+      <img src="https://cdn-icons-png.flaticon.com/128/901/901163.png" alt="Communication">
+      <h3>Communication</h3>
+      <p>A strength of mine</p>
+    </div>
+    <div>
+      <img src="https://cdn-icons-png.flaticon.com/128/3159/3159310.png" alt="Design">
+      <h3>Design</h3>
+      <p>Proficient designer</p>
+    </div>
+  </div>
+</section>
+
+<!-- My Work Section -->
+<section class="myWork">
+  <h1>My Work</h1>
+  <div class="workGrid">
+    <div>
+      <img src="https://as1.ftcdn.net/v2/jpg/01/63/11/70/1000_F_163117064_syJkTuCddASYjvl4WqyRmnuy8cDXpoQY.jpg" alt="Work 1" class="work-img">
+      <h4>Cat Case Study</h4>
+      <p>A case study about cats</p>
+      <button class="btn">View Project</button>
+    </div>
+    <div>
+      <img src="https://cdn.outsideonline.com/wp-content/uploads/2023/03/Funny_Dog_S.jpg" alt="Work 2" class="work-img">
+      <h4>Dog Case Study</h4>
+      <p>A case study about dogs</p>
+      <button class="btn">View Project</button>
+    </div>
+    <div>
+      <img src="https://i.natgeofe.com/n/e6c936f9-2581-4aad-90fc-ae74afed7549/01-bearded-dragons-nationalgeographic_2205873_square.jpg" alt="Work 3" class="work-img">
+      <h4>Bearded Dragon Case Study</h4>
+      <p>A case study about bearded dragons</p>
+      <button class="btn">View Project</button>
+    </div>
+    <div>
+      <img src="https://www.saolafoundation.org/wp-content/uploads/2022/08/Saola-About-400x400-1.jpg" alt="Work 4" class="work-img">
+      <h4>Saola Case Study</h4>
+      <p>A case study about Saolas</p>
+      <button class="btn">View Project</button>
+    </div>
+  </div>
+  <h3>View all projects.</h3>
+</section>
+
+</body>
+</html>
